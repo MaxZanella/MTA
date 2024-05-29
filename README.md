@@ -1,7 +1,7 @@
 # On the Test-Time Zero-Shot Generalization of Vision-Language Models: Do We Really Need Prompt Learning? [accepted at CVPR 2024]
 
 This is the official GitHub repository for our paper accepted at CVPR '24. 
-This work introduces the MeanShift Test-time Augmentation (MTA) method, leveraging Vision-Language models without the necessity for prompt learning. Our method randomly augments a single image into N augmented views, then alternates between two key steps (see [mta.py](mta.py)):
+This work introduces the MeanShift Test-time Augmentation (MTA) method, leveraging Vision-Language models without the necessity for prompt learning. Our method randomly augments a single image into N augmented views, then alternates between two key steps (see [mta.py](mta.py) and [Detailed Code Explanation](#detailed-code-explanation) section.):
 
 ### 1. Computing a Score for Each Augmented View
 
@@ -44,6 +44,26 @@ Or the 15 datasets at once:
 ```bash
 python main.py --data /path/to/your/data --mta --testsets I/A/R/V/K/DTD/Flower102/Food101/Cars/SUN397/Aircraft/Pets/Caltech101/UCF101/eurosat --seed 1
 ```
+
+## More details on the code in [mta.py](mta.py)
+
+### Function: `gaussian_kernel`
+- **Purpose**: Computes the Gaussian kernel density estimate of data points relative to the mode.
+- **Process**:
+  - Computes the Euclidean distance between each datapoint and the mode.
+  - Applies the Gaussian function to these distances to compute density values.
+
+### Function: `solve_mta`
+- **Purpose**: Solves the MTA alternate procedure.
+- **Process**:
+  1. **Feature Extraction**: Computes image and text features.
+  2. **Initialization**:
+     - Calculates pairwise distances among image features to determine the bandwidth for the Gaussian kernel.
+     - Initializes the affinity matrix based on the softmax of scaled logits.
+     - Sets initial values for inlierness scores (`y`) uniformly.
+  3. **Iterative Refinement**:
+     - Alternates between updating inlierness scores and the mode.
+  4. **Output Calculation**: Computes the final output by mapping the refined mode to text features.
 
 ## Citation
 
