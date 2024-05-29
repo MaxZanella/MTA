@@ -56,6 +56,7 @@ If you find this project useful, please cite it as follows:
   journal={arXiv preprint arXiv:2405.02266},
   year={2024}
 }
+```
 
 ## Acknowledgement
 
