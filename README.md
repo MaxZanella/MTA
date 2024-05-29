@@ -47,13 +47,14 @@ python main.py --data /path/to/your/data --mta --testsets I/A/R/V/K/DTD/Flower10
 
 ## Citation
 
-If you use this project in your research, please cite it as follows:
+If you find this project useful, please cite it as follows:
 
+```bibtex
 @article{zanella2024test,
-title={On the test-time zero-shot generalization of vision-language models: Do we really need prompt learning?},
-author={Zanella, Maxime and Ayed, Ismail Ben},
-journal={arXiv preprint arXiv:2405.02266},
-year={2024}
+  title={On the test-time zero-shot generalization of vision-language models: Do we really need prompt learning?},
+  author={Zanella, Maxime and Ayed, Ismail Ben},
+  journal={arXiv preprint arXiv:2405.02266},
+  year={2024}
 }
 
 ## Acknowledgement
