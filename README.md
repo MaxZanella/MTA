@@ -1,4 +1,7 @@
 # On the Test-Time Zero-Shot Generalization of Vision-Language Models: Do We Really Need Prompt Learning? [accepted at CVPR 2024]
+Authors:
+[Maxime Zanella](https://scholar.google.com/citations?user=FIoE9YIAAAAJ&hl=fr&oi=ao),
+[Ismail Ben Ayed](https://scholar.google.com/citations?user=29vyUccAAAAJ&hl=fr&oi=ao).
 
 This is the official GitHub repository for our paper accepted at CVPR '24. 
 This work introduces the MeanShift Test-time Augmentation (MTA) method, leveraging Vision-Language models without the necessity for prompt learning. Our method randomly augments a single image into N augmented views, then alternates between two key steps (see [mta.py](mta.py) and [Details on the code](#details-on-the-code) section.):
