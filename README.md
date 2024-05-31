@@ -67,9 +67,9 @@ More information on the procedure in [mta.py](mta.py).
      - Calculates pairwise distances among image features to determine the bandwidth for the Gaussian kernel.
      - Initializes the affinity matrix based on the softmax of scaled logits.
      - Sets initial values for inlierness scores (`y`) uniformly.
-  3. **Iterative Refinement**:
+  3. **Iterative optimization**:
      - Alternates between updating inlierness scores and the mode.
-  4. **Output Calculation**: Computes the final output by mapping the refined mode to text features.
+  4. **Output Calculation**: Computes the final output by cosine similarity of the final mode with the text features.
 
 ## Citation
 
