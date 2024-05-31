@@ -16,17 +16,17 @@ This step involves calculating a score for each augmented view to assess its rel
 <p align="center">
   <img src="inlierness.png" alt="Score computation for augmented views" width="500" height="150">
   <br>
-  <em>Figure 1: Score computation for augmented views.</em>
+  <em>Figure 1: Score computation for each augmented view.</em>
 </p>
 
 ### 2. Seeking for the Mode
 
-Based on the scores computed in the previous step, we seek the mode of the data (MeanShift).
+Based on the scores computed in the previous step, we seek the mode of the data points (MeanShift).
 
 <p align="center">
   <img src="mode.png" alt="Seeking the mode, weighted by score" width="500" height="180">
   <br>
-  <em>Figure 2: Seeking the mode, weighted by score.</em>
+  <em>Figure 2: Seeking the mode, weighted by inlierness scores.</em>
 </p>
 
 
