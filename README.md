@@ -1,4 +1,7 @@
 # On the Test-Time Zero-Shot Generalization of Vision-Language Models: Do We Really Need Prompt Learning? [accepted at CVPR 2024]
+
+The official implementation of [*On the Test-Time Zero-Shot Generalization of Vision-Language Models: Do We Really Need Prompt Learning?*](https://arxiv.org/abs/2405.02266).
+
 Authors:
 [Maxime Zanella](https://scholar.google.com/citations?user=FIoE9YIAAAAJ&hl=fr&oi=ao),
 [Ismail Ben Ayed](https://scholar.google.com/citations?user=29vyUccAAAAJ&hl=fr&oi=ao).
