@@ -76,10 +76,11 @@ More information on the procedure in [mta.py](mta.py).
 If you find this project useful, please cite it as follows:
 
 ```bibtex
-@article{zanella2024test,
+@inproceedings{zanella2024test,
   title={On the test-time zero-shot generalization of vision-language models: Do we really need prompt learning?},
-  author={Zanella, Maxime and Ayed, Ismail Ben},
-  journal={arXiv preprint arXiv:2405.02266},
+  author={Zanella, Maxime and Ben Ayed, Ismail},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={23783--23793},
   year={2024}
 }
 ```
