@@ -42,13 +42,13 @@ If more convenient you can change the folder names of each dataset in the dictio
 Execute MTA on the ImageNet dataset with a random seed of 1 and 'a photo of a' prompt by entering the following command:
 
 ```bash
-python main.py --data /path/to/your/data --mta --testsets I --seed 1
+python main.py --data /path/to/your/data --mta --test_sets I --seed 1
 ```
 
 Or the 15 datasets at once:
 
 ```bash
-python main.py --data /path/to/your/data --mta --testsets I/A/R/V/K/DTD/Flower102/Food101/Cars/SUN397/Aircraft/Pets/Caltech101/UCF101/eurosat --seed 1
+python main.py --data /path/to/your/data --mta --test_sets I/A/R/V/K/DTD/Flower102/Food101/Cars/SUN397/Aircraft/Pets/Caltech101/UCF101/eurosat --seed 1
 ```
 
 ## Details on the code
